@@ -1,2 +1,3 @@
-import { MessageFormatter } from "./MessageFormatter";
+import { MessageFormatter } from './MessageFormatter';
+
 export { MessageFormatter };
