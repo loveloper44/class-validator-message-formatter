@@ -1,0 +1,54 @@
+{
+  "name": "class-validator-message-formatter",
+  "version": "0.0.0",
+  "description": "```cli npm i class-validator-message-formatter ```",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node example/index.ts",
+    "test": "npm run lint && jest",
+    "prettier": "prettier",
+    "lint": "eslint --fix 'src/**/*.ts'",
+    "deploy": "npm publish --access public",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "lucas <loveloper44@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "class-validator",
+    "message"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loveloper44/class-validator-message-formatter.git"
+  },
+  "dependencies": {
+    "class-validator": "^0.9.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@types/prettier": "^1.16.4",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

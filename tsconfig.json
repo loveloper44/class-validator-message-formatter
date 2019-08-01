@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES6",
+        "lib": ["es2015", "es2016"],
+        "declaration": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "**/*.js", "**/*.spec.ts"]
+}
