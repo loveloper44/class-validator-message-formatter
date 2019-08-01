@@ -1,6 +1,6 @@
 {
   "name": "class-validator-message-formatter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "```cli npm i class-validator-message-formatter ```",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
