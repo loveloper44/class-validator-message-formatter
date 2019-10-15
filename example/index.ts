@@ -1,5 +1,6 @@
-import { MessageFormatter } from '../src';
 import { IsString, validateSync } from 'class-validator';
+
+import { MessageFormatter } from '../src';
 
 class User {
     @IsString()

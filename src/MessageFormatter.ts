@@ -23,7 +23,7 @@ function dfs(src: ValidationError[], dest: Constraint[], msg: string = null) {
             const field = isNaN(parseInt(validationError.property, 10))
                 ? formatProperty
                 : `[${validationError.property}]`;
-            this.format(validationError.children, dest, `${cur}${field}`);
+            dfs(validationError.children, dest, `${cur}${field}`);
         }
     }
 }
